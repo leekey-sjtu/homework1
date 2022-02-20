@@ -11,10 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var tvHello = findViewById<TextView>(R.id.tv_hello)
-        tvHello.setOnClickListener{
-            tvHello.text = "Hello SJTU"
-            Log.d( "MainActivity", "World")
+        tvHello.setOnClickListener {
+            //tvHello.text = "Try to click me!"
+            tvHello.text = "Click again!"
+            Log.d("MainActivity", "You Clicked me!")
         }
-        Log.d( "MainActivity", "World")
+        Log.d( "MainActivity", "App Start")
     }
 }
